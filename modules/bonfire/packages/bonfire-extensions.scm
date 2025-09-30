@@ -1,7 +1,12 @@
 ;;; SPDX-License-Identifier: GPL-3.0-or-later
-;;; Copyright © 2024 Giacomo Leidi <goodoldpaul@autistici.org>
+;;; Copyright © 2024, 2025 Giacomo Leidi <goodoldpaul@autistici.org>
 
 (define-module (bonfire packages bonfire-extensions)
+  #:use-module (gnu packages elixir-databases)
+  #:use-module (gnu packages elixir-i18n)
+  #:use-module (gnu packages elixir-markup)
+  #:use-module (gnu packages elixir-web)
+  #:use-module (gnu packages elixir-xyz)
   #:use-module (guix build-system mix)
   #:use-module (guix git-download)
   #:use-module (guix gexp)
@@ -10,15 +15,12 @@
   #:use-module (guix packages)
   #:use-module (bonfire packages bonfire-libraries)
   #:use-module (bonfire packages elixir-databases)
-  #:use-module (bonfire packages elixir-i18n)
-  #:use-module (bonfire packages elixir-markup)
-  #:use-module (bonfire packages elixir-web)
-  #:use-module (bonfire packages elixir-xyz))
+  #:use-module (bonfire packages elixir-web))
 
 (define-public bonfire-common.git
   (let ((version "0.4.0")
         (revision "1")
-        (commit "ea9160f5b0ce5ac535b2bad32305257a1de8da6f"))
+        (commit "2b158075cd60bcad084c5cca735956f0bd65ede7"))
     (package
       (name "bonfire-common")
       (version (git-version version revision commit))
@@ -30,7 +32,7 @@
                (commit commit)))
          (file-name (git-file-name name version))
          (sha256
-          (base32 "1bnvvi3kxazkajrbkklgghjiww26shddg5ccxsp628620cx0racm"))))
+          (base32 "1zpb1k2vnsm8qjh6m9gmlzdhc2j3xf7hpzcqs6kcb8fwr8ymsnc8"))))
       (build-system mix-build-system)
     (arguments
      (list
