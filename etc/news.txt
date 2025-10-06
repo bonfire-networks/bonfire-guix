@@ -1,2 +1,7 @@
 (channel-news
   (version 0))
+  (entry (commit "0b49969c682f5c4ca2ea9e181e390cea8c12f438")
+         (title (en "Move channel under bonfire-networks Github organization.")
+                (it "Migrazione all'organizzazione Github bonfire-networks."))
+         (body (en "This channel is moving over to https://github.com/bonfire-networks/bonfire-guix .")
+               (it "Questo channel si trasferisce su https://github.com/bonfire-networks/bonfire-guix .")))
