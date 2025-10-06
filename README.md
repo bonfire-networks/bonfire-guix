@@ -59,6 +59,19 @@ All contributions are welcome. If you have commit access please remember to setu
 guix git authenticate --cache-key=channels/bonfire-guix 2cc6f76adafb6333f0ec3e5fe4835fa0f0d9a0ff '8D10 60B9 6BB8 292E 829B  7249 AED4 1CC1 93B7 01E2'
 ```
 
-## License
+## Copyright and License
 
-Unless otherwise stated all the files in this repository are to be considered under the GPL 3.0 terms. You are more than welcome to open issues or send patches.
+Copyright (c) 2025 Bonfire Contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public
+License along with this program.  If not, see <https://www.gnu.org/licenses/>.
