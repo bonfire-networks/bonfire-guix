@@ -1,3 +1,9 @@
+# Deploy Bonfire over the Guix System
+
+This channel provides Guix packages and services related to Bonfire. As Bonfire's dependency graph is quite big, there is no single Guix package available yet for it. The current supported way is to deploy Bonfire as an [OCI backed Shepherd service](https://guix.gnu.org/manual/devel/en/guix.html#index-OCI_002dbacked_002c-Shepherd-services).
+
+There is an effor to package all Bonfire extensions, current efforts are available in the `(bonfire packages ...)` modules.
+
 ## Configure
 
 To configure Guix for using this channel you need to create a `.config/guix/channels.scm` file with the following content:
@@ -5,7 +11,7 @@ To configure Guix for using this channel you need to create a `.config/guix/chan
 ``` scheme
 (cons* (channel
         (name 'bonfire-guix)
-        (url "https://github.com/fishinthecalculator/bonfire-guix")
+        (url "https://github.com/bonfire-networks/bonfire-guix")
         (branch "main")
         ;; Enable signature verification:
         (introduction
@@ -21,7 +27,7 @@ Otherwise, if you already have a `.config/guix/channels.scm` you can simply prep
 ``` scheme
 (cons* (channel
         (name 'bonfire-guix)
-        (url "https://github.com/fishinthecalculator/bonfire-guix")
+        (url "https://github.com/bonfire-networks/bonfire-guix")
         (branch "main")
         ;; Enable signature verification:
         (introduction
@@ -43,7 +49,7 @@ Otherwise, if you already have a `.config/guix/channels.scm` you can simply prep
 
 ### What is a Guix channel?
 
-A [channel](https://guix.gnu.org/en/manual/devel/en/guix.html#Channels) is roughly the Guix equivalent of the AUR or container registries. It's a software repository providing Guix package and service definitions.
+A [channel](https://guix.gnu.org/manual/devel/en/guix.html#Channels) is roughly the Guix equivalent of the AUR or container registries. It's a software repository providing Guix package and service definitions.
 
 ## Contributing
 
