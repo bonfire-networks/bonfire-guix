@@ -10,7 +10,7 @@ To configure Guix for using this channel you need to create a `.config/guix/chan
 
 ``` scheme
 (cons* (channel
-        (name 'bonfire-guix)
+        (name 'bonfire)
         (url "https://github.com/bonfire-networks/bonfire-guix")
         (branch "main")
         ;; Enable signature verification:
@@ -26,7 +26,7 @@ Otherwise, if you already have a `.config/guix/channels.scm` you can simply prep
 
 ``` scheme
 (cons* (channel
-        (name 'bonfire-guix)
+        (name 'bonfire)
         (url "https://github.com/bonfire-networks/bonfire-guix")
         (branch "main")
         ;; Enable signature verification:
