@@ -2,7 +2,7 @@
 
 This channel provides Guix packages and services related to Bonfire. As Bonfire's dependency graph is quite big, there is no single Guix package available yet for it. The current supported way is to deploy Bonfire as an [OCI backed Shepherd service](https://guix.gnu.org/manual/devel/en/guix.html#index-OCI_002dbacked_002c-Shepherd-services).
 
-There is an effor to package all Bonfire extensions, current efforts are available in the `(bonfire packages ...)` modules.
+There is an ongoing effort to package all Bonfire extensions, current efforts are available in the `(bonfire packages ...)` modules.
 
 ## Configure
 
