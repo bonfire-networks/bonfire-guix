@@ -49,7 +49,7 @@ Otherwise, if you already have a `.config/guix/channels.scm` you can simply prep
 
 ### What is a Guix channel?
 
-A [channel](https://guix.gnu.org/manual/devel/en/guix.html#Channels) is roughly the Guix equivalent of the AUR or container registries. It's a software repository providing Guix package and service definitions.
+A [channel](https://guix.gnu.org/manual/devel/en/guix.html#Channels) is roughly the Guix equivalent of the AUR or Ubuntu's PPAs. It's a software repository providing Guix package and service definitions.
 
 ## Contributing
 
@@ -58,6 +58,10 @@ All contributions are welcome. If you have commit access please remember to setu
 ```bash
 guix git authenticate --cache-key=channels/bonfire-guix 2cc6f76adafb6333f0ec3e5fe4835fa0f0d9a0ff '8D10 60B9 6BB8 292E 829B  7249 AED4 1CC1 93B7 01E2'
 ```
+
+## Join our community
+
+If you have questions about anything related to Bonfire, you're always welcome to ask our community on [Matrix](https://matrix.to/#/#bonfire-networks:matrix.org), [Slack](https://join.slack.com/t/elixir-lang/shared_invite/zt-2ko4792lz-28XosraCTaYZKOyuZ80hrg), [Elixir Forum](https://elixirforum.com) and the [Fediverse](https://indieweb.social/@bonfire) or send us an email at [team@bonfire.cafe](mailto:team@bonfire.cafe).
 
 ## Copyright and License
 
